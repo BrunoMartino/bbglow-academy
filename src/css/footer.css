@@ -12,6 +12,11 @@ footer {
   background-color: #ccc;
   margin-top: 24px;
 }
+@media (max-width: 960px) {
+  .footer_cta::after {
+    display: none;
+  }
+}
 .footer_cta h3 {
   @apply max-w-[35ch] text-2xl mb-6 text-[#736371];
 }

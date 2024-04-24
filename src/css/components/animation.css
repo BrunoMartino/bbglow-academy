@@ -1,0 +1,116 @@
+.sess1_cta,
+.sess2_description,
+.sess4_content,
+.sess5_content-wrapper,
+.sess7_content,
+.sess7_contact-box {
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+
+.sess1_cta.onShow,
+.sess2_description.onShow,
+.sess4_content.onShow {
+  animation: show-left 1.5s forwards;
+}
+
+.sess2_showcase-wrapper {
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+}
+.sess2_showcase-wrapper:nth-child(1).onShow {
+  animation: show-down 1.5s forwards;
+}
+.sess2_showcase-wrapper:last-child.onShow,
+.sess5_content-wrapper.onShow {
+  animation: show-right 1.5s forwards;
+}
+.sess2_showcase-wrapper:nth-child(2).onShow,
+.sess7_content.onShow {
+  animation: show-up 1.5s forwards;
+}
+.sess7_contact-box:first-child.onShow {
+  animation: show-left 1.5s forwards;
+}
+.sess7_contact-box:nth-child(2).onShow {
+  animation: show-down 1.5s forwards;
+}
+.sess7_contact-box:last-child.onShow {
+  animation: show-right 1.5s forwards;
+}
+
+.sess5-img1 {
+  opacity: 0.65;
+  transition: ease-in-out 0.3s;
+}
+.sess5-img2 {
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+}
+.sess5-img1.onShow {
+  animation: rotate 2s forwards;
+}
+.sess5-img2.onShow {
+  animation: fall 1s forwards;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(90px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -90px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 90px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes rotate {
+  from {
+    opacity: 0.65;
+    transform: rotate(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+@keyframes fall {
+  from {
+    opacity: 0.65;
+    transform: translate3d(0, -1000px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

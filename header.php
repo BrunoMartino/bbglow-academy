@@ -76,7 +76,7 @@
     <div class="header_strip">
       <div class='header_strip_content'>
       <a class="hidden md:block" href="/shop/">Easy Online Shoppging</a>
-      <a class="font-poppins font-medium" href="tel:+16179555006">Feel free to give us a call ! +1 617 955-5006</a>
+      <a class="font-poppins" href="tel:+16179555006">Feel free to give us a call ! +1 617 955-5006</a>
       <nav class="media_nav">
         <a class="media-icon" href="https://www.facebook.com/bbglowacademy/"><img src="<?= $icon_url .'/facebook.svg'?>" alt="facebook's link"></a>
         <a class="media-icon" href="https://www.instagram.com/bbglow_academy/"><img src="<?= $icon_url .'/instagram.svg'?>" alt="instagram's link"></a>

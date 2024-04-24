@@ -1,0 +1,20 @@
+.posts_list {
+  @apply flex flex-col items-center justify-center gap-8 mt-16 mb-8 lg:flex-row lg:justify-between lg:items-start;
+}
+.posts_list-item {
+  @apply max-w-[280px] rounded-xl relative font-poppins;
+}
+.posts_list-item a img {
+  border-radius: 1.75rem 1.75rem 0 0;
+  @apply max-w-[280px] h-[280px] object-cover box-border;
+}
+.posts_info {
+  border-radius: 0 0 1.75rem 1.75rem;
+  @apply bg-[#7b6772] py-8 px-4;
+}
+.posts_info h4 {
+  @apply text-lg text-white;
+}
+.posts_info p {
+  @apply text-white text-xs;
+}

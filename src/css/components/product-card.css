@@ -1,0 +1,48 @@
+.product_list {
+  @apply flex flex-col items-center justify-center gap-8 mt-16 mb-28 lg:flex-row lg:justify-between lg:items-start;
+}
+
+.product_list-item {
+  @apply max-w-[280px] rounded-xl relative font-poppins;
+}
+.product_list-item:after {
+  content: "sale!";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  border-radius: 50%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 3rem;
+  letter-spacing: 0.1;
+  background-color: #940000;
+  text-align: center;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+}
+
+.product_list-item a img {
+  @apply max-w-[280px] h-[280px] object-cover box-border rounded-3xl;
+}
+.product_list-item-info {
+  @apply p-4;
+}
+.product_list-item-info h4 {
+  @apply max-w-[35ch] text-[#c1acb0] font-bold;
+}
+.product_list-item-info p {
+  @apply inline-block p-1;
+}
+.reg-price {
+  @apply text-[#6a6a6a] opacity-70 line-through;
+}
+.sell-price {
+  @apply text-[#6a6a6a] font-semibold underline;
+}
+.product_list-item-info p:last-child {
+  @apply mt-6 block py-2 px-3 max-w-max;
+}

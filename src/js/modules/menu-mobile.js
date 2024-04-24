@@ -19,7 +19,6 @@ export default class MenuMobile {
     this.openMenu = this.openMenu.bind(this);
 
     this.linkPreventRemove = this.linkPreventRemove.bind(this);
-    console.log("menu-mobile iniciado");
   }
 
   linkPreventRemove(event) {

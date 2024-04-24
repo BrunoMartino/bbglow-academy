@@ -2,12 +2,17 @@
 
 @import "./header.css";
 @import "./footer.css";
+@import "./home.css";
+@import "./components/product-card.css";
+@import "./components/posts-card.css";
+@import "./components/animation.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  margin: 0 !important;
+  margin: 0 auto !important;
   padding: 0 !important;
+  max-width: 1560px;
 }

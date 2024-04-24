@@ -1,8 +1,12 @@
+header {
+  @apply w-full bg-white;
+}
+
 .header_strip {
   @apply bg-[#7B6772];
 }
 .header_strip_content {
-  @apply container mx-auto px-8 py-4 flex justify-evenly items-center text-white text-sm;
+  @apply container mx-auto px-8 py-4 flex justify-center items-center text-white text-sm lg:justify-between;
 }
 .media_nav {
   @apply hidden md:flex md:justify-evenly md:items-center md:gap-3;
@@ -12,7 +16,7 @@
 }
 
 .header_main {
-  @apply container mx-auto px-8 flex items-center justify-evenly gap-8;
+  @apply px-8 container mx-auto flex items-center justify-between gap-8;
 }
 
 .logo_header img {
