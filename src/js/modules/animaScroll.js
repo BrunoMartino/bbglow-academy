@@ -4,7 +4,7 @@ export default class AnimaScroll {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
 
-    this.windowEight = window.innerHeight * 0.8;
+    this.windowEight = window.innerHeight * 0.85;
 
     this.checkDistance = debounce(this.checkDistance.bind(this), 50);
   }

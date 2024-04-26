@@ -39,15 +39,15 @@ header {
 }
 
 .header_nav #menu-header {
-  @apply flex w-full flex-col absolute justify-start items-start bg-white z-40 gap-4 top-48 left-0 lg:sticky lg:flex-row lg:justify-between lg:items-center lg:z-0;
+  @apply flex w-full flex-col absolute justify-start items-start bg-white z-40 gap-4 top-40 left-0 lg:sticky lg:flex-row lg:justify-between lg:items-center lg:z-30;
 }
 .header_nav #menu-header a {
   @apply flex items-center py-4 px-4 text-[#7b6772] font-normal lg:mx-2 text-lg;
 }
 .header_nav #menu-header .sub-menu {
-  @apply sticky z-50 lg:absolute lg:z-40 lg:bg-white lg:left-[50%];
+  @apply sticky z-50 lg:absolute lg:bg-white lg:left-[50%];
 }
-.header_nav #menu-header li:nth-child(3) a:after {
+.header_nav #menu-header li:nth-child(4) a:after {
   background: url("../img/arrow-down.svg") center center no-repeat;
   width: 24px;
   height: 24px;

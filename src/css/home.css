@@ -91,7 +91,7 @@
 #sess3,
 #sess6,
 #sess8 {
-  @apply container mx-auto;
+  @apply container mx-auto px-12;
 }
 #sess3 .product-title,
 #sess6 .product-title,
@@ -159,7 +159,7 @@
   @apply text-[#6a6a6a];
 }
 #sess7 {
-  @apply w-full h-screen relative z-10 mb-[540px] md:mb-[800px] lg:mb-40;
+  @apply w-full h-screen relative z-10 mb-[620px] md:mb-[800px] lg:mb-40;
 }
 #sess7 .sess7_wrapper {
   background: linear-gradient(

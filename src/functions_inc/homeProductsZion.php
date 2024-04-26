@@ -1,7 +1,6 @@
 <?php 
 function format_products($products, $img_size = "medium") {
   $products_final = [];
-
   foreach ($products as $product) {
     $product_img = wp_get_attachment_image_src($product->get_image_id(), $img_size)[0];
     $products_final[] = [
@@ -25,10 +24,10 @@ function bbglow_product_list($products) {
 <a href="<?= $product['link'] ?>">
     <img src="<?= $product['img'] ?>" alt="<?= $product['name'] ?> ">
   <div class="product_list-item-info">
-    <h4 class="font-1-s"> <?= $product['name'] ?> </h4>
-    <p class="font-2-s reg-price" > $ <?= $product['regular-price'] ?> </p>
-    <p class="font-2-s sell-price" > $ <?= $product['sell-price'] ?> </p>
-    <p class="font-2-s shop_btn" > buy now</p>
+    <h4> <?= $product['name'] ?> </h4>
+    <p class="reg-price" > $ <?= $product['regular-price'] ?> </p>
+    <p class=" sell-price" > $ <?= $product['sell-price'] ?> </p>
+    <p class=" shop_btn" > buy now</p>
   </div>
 </a>
 </li>

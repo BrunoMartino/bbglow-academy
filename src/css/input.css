@@ -6,6 +6,7 @@
 @import "./components/product-card.css";
 @import "./components/posts-card.css";
 @import "./components/animation.css";
+@import "./archive-product.css";
 
 @tailwind base;
 @tailwind components;
