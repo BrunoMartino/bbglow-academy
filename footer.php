@@ -1,6 +1,6 @@
 <footer>
   <?php
-      $icon_url = get_template_directory_uri() . '/dist/img';
+      $icon_url = get_stylesheet_directory_uri() . '/dist/img';
   ?>
 <div class='footer_cta'>  
   <img class='footer_cta-img' src="<?=$icon_url . '/logo-footer.png' ?>" alt="logo-footer">

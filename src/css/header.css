@@ -8,6 +8,9 @@ header {
 .header_strip_content {
   @apply container mx-auto px-8 py-4 flex justify-center items-center text-white text-sm lg:justify-between;
 }
+.header_strip_content a {
+  @apply text-white;
+}
 .media_nav {
   @apply hidden md:flex md:justify-evenly md:items-center md:gap-3;
 }

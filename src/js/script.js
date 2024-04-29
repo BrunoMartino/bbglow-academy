@@ -3,10 +3,14 @@ import AnimaScroll from "./modules/animaScroll.js";
 import "./modules/filters-query.js";
 
 const menuMobile = new MenuMobile(".menu_mobile-btn", ".header_nav");
+const filterMobile = new MenuMobile(".filter_btn", ".filter_list");
+const catMobile = new MenuMobile(".categories_btn", ".categories_nav");
 
 const animaScroll = new AnimaScroll('[data-anima="scroll"]');
 
 menuMobile.init();
+filterMobile.init();
+catMobile.init();
 animaScroll.init();
 
 window.addEventListener("scroll", () => {

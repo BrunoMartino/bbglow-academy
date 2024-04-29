@@ -2,7 +2,7 @@
 //Template Name: Home-zion
 get_header(); ?>
 <?php 
-$image_url = get_template_directory_uri() . '/dist/img';
+$image_url = get_stylesheet_directory_uri() . '/dist/img';
 $product_new_inputs = wc_get_products([
   'limit' => 4,
   'orderby' => 'date',

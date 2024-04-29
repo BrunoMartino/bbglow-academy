@@ -70,7 +70,7 @@
 <body <?php body_class();?>>
   <header>
     <?php 
-    $icon_url = get_template_directory_uri() . '/dist/img';
+    $icon_url = get_stylesheet_directory_uri() . '/dist/img';
     $cart_count = WC()->cart->get_cart_contents_count();
     ?>
     <div class="header_strip">
