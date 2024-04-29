@@ -1,5 +1,6 @@
 import MenuMobile from "./modules/menu-mobile.js";
 import AnimaScroll from "./modules/animaScroll.js";
+import "./modules/singleProductCaroussel.js";
 import "./modules/filters-query.js";
 
 const menuMobile = new MenuMobile(".menu_mobile-btn", ".header_nav");

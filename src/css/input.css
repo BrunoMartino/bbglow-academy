@@ -9,6 +9,7 @@
 @import "./components/posts-card.css";
 @import "./components/animation.css";
 @import "./archive-product.css";
+@import "./single-product.css";
 
 @tailwind base;
 @tailwind components;
