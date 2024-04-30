@@ -10,9 +10,9 @@ function remove_unwanted_styles() {
     // Dequeue the woocommerce-layout.css
     wp_dequeue_style('woocommerce-layout');
     wp_dequeue_style('zion');
-    wp_dequeue_style('slick');
-    wp_dequeue_style('lity');
-    wp_dequeue_style( 'main' );
+    // wp_dequeue_style('slick');
+    // wp_dequeue_style('lity');
+    // wp_dequeue_style( 'main' );
     // Dequeue jQuery
     wp_dequeue_script('jquery');
 

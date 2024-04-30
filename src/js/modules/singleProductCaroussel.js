@@ -16,8 +16,8 @@ if (mainSlide && thumbSlide) {
     });
 
     const thumbnails = new Splide(thumbSlide, {
-      fixedHeight: 60,
-      fixedWidth: 60,
+      fixedHeight: 80,
+      fixedWidth: 80,
       gap: "12px",
       rewind: true,
       pagination: false,

@@ -110,10 +110,13 @@
 }
 .categories_nav #menu-categories-filter li a,
 .navigation a {
-  @apply text-[#7a6772];
+  @apply text-[#7a6772] text-lg;
 }
 .navigation {
   @apply col-span-full md:col-start-1 md:col-span-2 lg:col-start-3 lg:col-span-1 flex justify-end font-poppins font-medium text-[#7a6772] px-12;
+}
+.nav-links {
+  @apply flex;
 }
 .next.page-numbers {
   @apply hidden;

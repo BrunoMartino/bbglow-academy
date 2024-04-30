@@ -20,6 +20,9 @@ html {
   padding: 0 !important;
   max-width: 1560px;
 }
+body {
+  padding-top: 0 !important;
+}
 a {
   color: inherit;
 }

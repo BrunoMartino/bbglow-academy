@@ -1,5 +1,6 @@
 import MenuMobile from "./modules/menu-mobile.js";
 import AnimaScroll from "./modules/animaScroll.js";
+import IncrementQty from "./modules/increment-qty.js";
 import "./modules/singleProductCaroussel.js";
 import "./modules/filters-query.js";
 
@@ -8,6 +9,12 @@ const filterMobile = new MenuMobile(".filter_btn", ".filter_list");
 const catMobile = new MenuMobile(".categories_btn", ".categories_nav");
 
 const animaScroll = new AnimaScroll('[data-anima="scroll"]');
+const infoproduct = document.querySelector(".product__info");
+
+if (infoproduct) {
+  const qtyValues = new IncrementQty(".qty");
+  qtyValues.init();
+}
 
 menuMobile.init();
 filterMobile.init();

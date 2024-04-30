@@ -47,11 +47,14 @@ if(have_posts()){while (have_posts()) { the_post();
  </div>
 <?php } ?>
   <section class="product__info">
-    <small class="sku"><?= 'sku:' . $single_product['sku']; ?></small>
     <h1><?= $single_product['name'] ?></h1>
-    <p class='single__reg-price'> $ <?= $single_product['regular-price'] ?></p>
     <?php if($single_product['sale-price']) { ?>
+    <p class='single__reg-price'> $ <?= $single_product['regular-price'] ?></p>
     <p class="single__sale-price"> $ <?= $single_product['sale-price']?></p>
+    <?php } else { 
+     $single_product['sale-price'] = $single_product['regular-price']  
+    ?>
+        <p class="single__sale-price"> $ <?= $single_product['sale-price']?></p>
     <?php } ?>
     <div class="btn-flexbox">
       <?php woocommerce_template_single_add_to_cart(); ?>
@@ -59,8 +62,10 @@ if(have_posts()){while (have_posts()) { the_post();
   </section>
   </main>
   <section class="product__description">
+    <div>
     <h2>Description</h2>
     <p><?= $single_product['description']; ?></p>
+    </div>
   </section>
   <?php 
   $related_ids = wc_get_related_products( $single_product['id'],4 );

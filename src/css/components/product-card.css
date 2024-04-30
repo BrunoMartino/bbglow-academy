@@ -1,5 +1,5 @@
 .product_list {
-  @apply flex flex-col items-center justify-center gap-8 mt-16 mb-28 lg:flex-row lg:justify-between lg:items-start;
+  @apply flex flex-col items-center justify-center gap-8 mt-16 mb-28 lg:flex-row lg:justify-between lg:items-start w-full;
 }
 
 .product_list-item {
