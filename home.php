@@ -72,9 +72,7 @@ $data['sess2_showcase'] = get_field('showcase_products');
   <h2 ><?= the_field('sess3_title') ?></h2>
   <a href="<?= the_field('sess3_btn_link') ?>"><?= the_field('sess3_btn_label') ?></a>
 </div>
-<div>
   <?php bbglow_product_list($data['most_sales']) ?>
-</div>
 </section>
 <section id="sess4" 
 <?php 
@@ -153,19 +151,19 @@ background-size: cover;
     <a class='shop_btn' href="<?= the_field('sess7_btn_link') ?>"><?= the_field('sess7_btn_label') ?></a>
     </div>
   <div class="sess7_contact_wrapper">
-  <div class='sess7_contact-box' data-anima="scroll">
+  <div class='sess7_contact-box'>
   <img src="<?= $image_url . '/chat.svg' ?>" alt="icon">
   <h4 >Customer Support</h4>
   <p >Experience unparalleled customer support tailored to your needs.</p>
   <a class="shop_btn" href="tel:+16179555006">Call Us</a>
   </div>
-  <div class='sess7_contact-box' data-anima="scroll">
+  <div class='sess7_contact-box'>
   <img src="<?= $image_url . '/mail.svg' ?>" alt="icon">
   <h4 >Live Chat with our Team</h4>
   <p >Need assistance? Our chat support is here to help you in real-time.</p>
   <a class="shop_btn" id="chat_link" href="/chat">Click on chat icon</a>
   </div>
-  <div class='sess7_contact-box' data-anima="scroll">
+  <div class='sess7_contact-box'>
   <img src="<?= $image_url . '/file.svg' ?>" alt="icon">
   <h4 >Blog & Tutorials</h4>
   <p >Explore our insightful blogs for the latest trends and expert beauty advice.</p>

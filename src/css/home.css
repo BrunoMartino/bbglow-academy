@@ -10,13 +10,13 @@
   @apply absolute top-0 left-0 w-full h-full object-cover -z-20;
 }
 .sess1_cta {
-  @apply px-8 py-16 container mx-auto self-end lg:px-16;
+  @apply px-8 py-16 container mx-auto self-end lg:px-16 lg:ml-20;
 }
 .sess1_cta h1 {
   @apply max-w-[60ch] text-white text-3xl font-poppins font-semibold mb-5 lg:text-4xl lg:max-w-[45ch];
 }
 .sess1_cta p {
-  @apply text-white capitalize mb-16;
+  @apply text-white capitalize mb-16 lg:text-lg;
 }
 .sess1_cta p:after {
   content: "";
@@ -27,7 +27,7 @@
   margin-top: 1rem;
 }
 .shop_btn {
-  @apply text-white font-poppins font-medium uppercase p-4 bg-[#7b6772] rounded-2xl hover:opacity-85 max-w-max;
+  @apply text-white font-poppins font-medium uppercase p-4 bg-[#7b6772] rounded-2xl hover:opacity-85 max-w-max hover:text-white;
 }
 
 #sess2 {
@@ -40,7 +40,7 @@
   @apply text-4xl max-w-[15ch] mb-5 text-[#c1acb0] font-semibold;
 }
 .sess2_description p {
-  @apply text-[#6a6a6a] lg:max-w-[30ch];
+  @apply text-[#6a6a6a] lg:max-w-[30ch] lg:text-lg;
 }
 .sess2_description p::after {
   content: "";
@@ -93,6 +93,7 @@
 #sess8 {
   @apply container mx-auto px-12;
 }
+
 #sess3 .product-title,
 #sess6 .product-title,
 #sess8 .posts_title {
@@ -101,18 +102,18 @@
 #sess3 .product-title h2,
 #sess6 .product-title h2,
 #sess8 .posts_title h2 {
-  @apply text-4xl max-w-[12ch] text-[#736371] font-semibold mb-6 md:max-w-[35ch];
+  @apply text-4xl max-w-[12ch] text-[#736371] font-semibold mb-6 md:max-w-[35ch] lg:max-w-[25ch];
 }
 #sess3 .product-title a,
 #sess6 .product-title a,
 #sess8 .posts_title a {
-  @apply bg-[#736371] font-poppins text-white rounded-xl py-3 px-4;
+  @apply bg-[#736371] font-poppins text-lg text-white rounded-xl py-3 px-4 capitalize;
 }
 #sess4 {
   @apply w-full h-full mb-12;
 }
 #sess4 .sess4_content {
-  @apply px-8 py-16 font-poppins container mx-auto self-center lg:px-16;
+  @apply px-8 py-16 font-poppins container mx-auto self-center lg:px-16 lg:ml-20;
 }
 
 #sess4 .sess4_content h2 {
@@ -123,7 +124,7 @@
 }
 
 #sess5 {
-  @apply container mx-auto flex flex-col-reverse gap-6 p-8 lg:flex-row justify-center;
+  @apply container mx-auto flex flex-col-reverse gap-6 p-8 lg:flex-row justify-center lg:justify-evenly;
 }
 .sess5_img-wrapper {
   @apply relative max-w-max py-12 px-4;

@@ -2,8 +2,7 @@
 .sess2_description,
 .sess4_content,
 .sess5_content-wrapper,
-.sess7_content,
-.sess7_contact-box {
+.sess7_content {
   transition: ease-in-out 0.3s;
   opacity: 0;
 }
