@@ -1,13 +1,17 @@
 const mostSales = document.getElementById("most-sales-btn");
 const newest = document.getElementById("newest-btn");
+const alphabetical = document.getElementById("az-btn");
 
-if (mostSales && newest) {
+if (mostSales && newest && alphabetical) {
   document.addEventListener("DOMContentLoaded", () => {
     mostSales.addEventListener("click", () => {
       filterProducts("most_sales");
     });
     newest.addEventListener("click", () => {
       filterProducts("newest");
+    });
+    alphabetical.addEventListener("click", () => {
+      filterProducts("alphabetical");
     });
 
     function filterProducts(filterType) {

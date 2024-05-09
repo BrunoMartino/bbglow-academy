@@ -23,6 +23,14 @@ function filter_products() {
             'stock_status' => 'instock'
         ));
         $products = format_products($products);
+    } elseif ($filter === 'alphabetical') {
+        $products = wc_get_products(array(
+            'limit' => 9, 
+            'orderby' => 'title', 
+            'order' => 'ASC', 
+            'stock_status' => 'instock'
+        ));
+        $products = format_products($products);
     }
 
     $products_html = bbglow_product_list($products);

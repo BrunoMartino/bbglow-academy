@@ -40,17 +40,33 @@ $banners = get_field('shop_slide',woocommerce_get_page_id('shop'));
   </form>
 </div>
 <div class="filter_wrapper">
-  <button class="filter_btn lg:hidden">Filters</button>
+  <button class="filter_btn lg:hidden">
+    <p>Filters</p>
+  </button>
   <ul class="filter_list hidden lg:flex">
     <li>
       <a id="all_products" href="/shop">All Products</a>
     </li>
     <li>
-      <button id="most-sales-btn">
-best sellers</button>
+      <button id="most-sales-btn">best sellers</button>
     </li>
     <li>
       <button id="newest-btn">releases</button>
+    </li>
+    <li>
+      <button id="az-btn">A - Z</button>
+    </li>
+    <li>
+      <a id="price-btn" href="#">
+        <p>Price</p>
+          <form class='filter__price hidden'>
+          <div>
+            <label for="max_price">Until <span>$</span></label>
+            <input type="number" name='max_price' id="max_price" value="<?= $_GET['max_price'] ?? ""; ?>">
+          </div>    
+            <button type="submit">Search Price</button>
+          </form>
+      </a>
     </li>
   </ul>
 </div>

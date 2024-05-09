@@ -5,9 +5,17 @@ import "./modules/singleProductCaroussel.js";
 import "./modules/shopBannerSlide.js";
 import "./modules/filters-query.js";
 
+const priceBtn = document.getElementById("price-btn");
+if (priceBtn) {
+  priceBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+  });
+}
+
 const menuMobile = new MenuMobile(".menu_mobile-btn", ".header_nav");
 const filterMobile = new MenuMobile(".filter_btn", ".filter_list");
 const catMobile = new MenuMobile(".categories_btn", ".categories_nav");
+const filterPrice = new MenuMobile("#price-btn", ".filter__price");
 
 const animaScroll = new AnimaScroll('[data-anima="scroll"]');
 const infoproduct = document.querySelector(".product__info");
@@ -21,6 +29,7 @@ menuMobile.init();
 filterMobile.init();
 catMobile.init();
 animaScroll.init();
+filterPrice.init();
 
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector("header");
