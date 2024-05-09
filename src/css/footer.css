@@ -1,9 +1,9 @@
 footer {
   background: #f9f9f9 !important;
-  @apply bg-[#f9f9f9] container mx-auto;
+  @apply bg-[#f9f9f9] w-full;
 }
 .footer_cta {
-  @apply px-8 pt-8 pb-6 flex justify-between flex-wrap items-center font-poppins flex-col lg:flex-row-reverse;
+  @apply px-8 pt-8 pb-6 container mx-auto flex justify-between flex-wrap items-center font-poppins flex-col lg:flex-row-reverse;
 }
 .footer_cta::after {
   content: "";
@@ -28,7 +28,7 @@ footer {
   @apply w-[364px] flex-shrink;
 }
 .footer_links {
-  @apply flex px-12 pt-8 pb-6 flex-wrap justify-between items-start gap-4;
+  @apply flex container mx-auto px-12 pt-8 pb-6 flex-wrap justify-between items-start gap-4;
 }
 .footer_links::after {
   content: "";
@@ -61,7 +61,7 @@ footer {
 }
 
 .footer-end {
-  @apply justify-between flex items-center flex-wrap px-8;
+  @apply justify-between  container mx-auto flex items-center flex-wrap px-8;
 }
 
 .footer-end a,

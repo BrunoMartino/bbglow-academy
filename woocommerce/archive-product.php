@@ -7,16 +7,27 @@ if (have_posts()) {while(have_posts()) {the_post();
 $products[] = wc_get_product(get_the_ID());
 } };
 $data['products'] = format_products($products);
+$banners = get_field('shop_slide',woocommerce_get_page_id('shop'));
 ?>
 <section id="shop__banner">
-  <img class="shop__banner-bg" src="<?= the_field('background_shop_sess1', woocommerce_get_page_id('shop')) ?>" alt="promotion banner">
-  <div class="banner__wrapper">
-    <img src="<?= the_field('image_product_sess1',woocommerce_get_page_id('shop') ) ?>" alt="
-    featured product">
-    <div class="banner__wrapper-info">
-      <h3><?php echo the_field('title_sess1',woocommerce_get_page_id('shop') ) ?>  <span> <?php the_field('subtitle_sess1',woocommerce_get_page_id('shop') ) ?></span></h3>
-      <a href="<?= the_field('url_button_sess1',woocommerce_get_page_id('shop') ) ?>"><?= the_field('button_label',woocommerce_get_page_id('shop') ) ?></a>
-    </div>
+  <div id="banner__slide" class="splide">
+     <div class="splide__track">
+        <ul class="splide__list">
+          <?php foreach($banners as $slide) { ?>
+            <li class="splide__slide banner__wrapper">
+              
+              <!-- <div class="image__container"> -->
+                 <img src="<?= $slide['slide_image'] ?>" alt="<?= $slide['product_name'] ?>"> 
+             <!-- </div> -->
+                <div class="banner__product-wrapper">
+                  <h1><?= $slide['product_name'] ?></h1>
+                  <p><?= $slide['price_text'] ?></p>
+                  <a class="shop_btn" href="<?= $slide['button_link'] ?>"><?= $slide['button_label'] ?></a>
+                </div>
+            </li>
+          <?php }?> 
+        </ul>
+     </div>
   </div>
 </section>
 

@@ -85,7 +85,7 @@
       </div>
     </div>
     <div class="header_main">
-      <a class="menu_mobile-btn"></a>
+      <a class="menu_mobile-btn">Menu</a>
       <a href="/" class='logo_header'><img src="<?= $icon_url . '/logo-header.png' ?>" alt="logo"></a>
       <?php
         wp_nav_menu([
@@ -95,7 +95,7 @@
         ]);
       ?>
       <div class="header_cart">
-      <a id="cart_link"  href="/cart" ><img src="<?=$icon_url . '/cart.svg'?>" alt=""></a>
+      <a id="cart_link"  href="/cart" ><img src="<?=$icon_url . '/cart.svg'?>" alt=""><p>My cart</p></a>
         <?php if($cart_count) { ?>
           <span class='header_cart-count'><?= $cart_count; ?></span>
         <?php };?>

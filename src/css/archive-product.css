@@ -1,30 +1,24 @@
 #shop__banner {
-  @apply w-full h-[40vh] relative mb-8 flex lg:h-[50vh];
+  @apply w-full h-[40vh] mb-16 flex lg:h-[50vh];
 }
-.shop__banner-bg {
-  @apply absolute -z-10 w-full h-[40vh] object-cover object-left lg:h-[50vh];
+#banner__slide {
+  @apply w-full h-full border-b-4 border-b-black;
 }
 .banner__wrapper {
-  @apply flex items-center self-end container mx-auto lg:justify-end  lg:px-20;
+  @apply container mx-auto h-[420px] w-full relative;
 }
 .banner__wrapper img {
-  transition: ease-in-out 0.3s;
-  @apply w-[240px] h-full pr-8 lg:w-[320px];
+  @apply w-full h-full object-cover;
 }
-.banner__wrapper:hover img {
-  transform: translate3d(0, -1rem, 0);
+.banner__product-wrapper {
+  @apply absolute top-0 left-0 z-10 bg-[#C1ACB0] bg-opacity-70 w-full h-full flex flex-col items-center justify-center;
 }
-.banner__wrapper-info {
-  @apply flex flex-col px-4;
+.banner__product-wrapper h1,
+.banner__product-wrapper p {
+  @apply text-white text-3xl font-poppins lg:text-5xl;
 }
-.banner__wrapper-info h3 {
-  @apply text-xl text-white font-poppins font-bold;
-}
-.banner__wrapper-info h3 span {
-  @apply text-black text-base;
-}
-.banner__wrapper-info a {
-  @apply uppercase font-bold text-sm text-white bg-black py-4 px-6 rounded-full max-w-max mt-6;
+.banner__product-wrapper h1 {
+  @apply font-bold;
 }
 
 #search__wrapper {

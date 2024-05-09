@@ -3,9 +3,6 @@ import Splide from "@splidejs/splide";
 const mainSlide = document.getElementById("main-slider");
 const thumbSlide = document.getElementById("thumbnail-slider");
 
-console.log(mainSlide);
-console.log(thumbSlide);
-
 if (mainSlide && thumbSlide) {
   document.addEventListener("DOMContentLoaded", () => {
     const main = new Splide(mainSlide, {

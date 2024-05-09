@@ -22,6 +22,7 @@ function bbglow_product_list($products) {
 <?php foreach($products as $product) { ?>
 <li class="product_list-item">
 <a href="<?= $product['link'] ?>">
+  <span class="sales_tag">Sale!</span>
     <img src="<?= $product['img'] ?>" alt="<?= $product['name'] ?> ">
   <div class="product_list-item-info">
     <h4> <?= $product['name'] ?> </h4>

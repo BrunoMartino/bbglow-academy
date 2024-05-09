@@ -20,7 +20,7 @@ header {
 }
 
 .header_main {
-  @apply px-8 container mx-auto flex items-center justify-between gap-8;
+  @apply px-8 container mx-auto flex items-center justify-between gap-8 lg:justify-around;
 }
 
 .logo_header img {
@@ -28,30 +28,32 @@ header {
 }
 
 .menu_mobile-btn {
-  @apply border-t-4 border-t-black w-5 block lg:hidden;
+  @apply flex items-center font-poppins text-[#7b6772] font-medium uppercase lg:hidden;
 }
-.menu_mobile-btn::before,
-.menu_mobile-btn::after {
+.menu_mobile-btn::before {
+  background: url("../img/menu.svg") center center no-repeat;
   content: "";
-  display: block;
-  width: 1.25rem;
-  height: 0.25rem;
-  border-radius: 2px;
-  background-color: black;
-  position: relative;
-  margin-top: 0.25rem;
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
 }
 
 .header_nav #menu-header {
-  @apply flex w-full flex-col absolute justify-start items-start bg-white z-40 gap-4 top-40 left-0 lg:sticky lg:flex-row lg:justify-between lg:items-center lg:z-30;
+  @apply flex w-[360px] flex-1 flex-col absolute justify-start items-start bg-[#C1ACB0] lg:bg-white lg:w-full z-40 gap-4 top-[156px] left-8 lg:sticky lg:flex-row lg:justify-between lg:items-center lg:z-30 lg:pt-6;
 }
 .header_nav #menu-header a {
-  @apply flex items-center py-4 px-4 text-[#7b6772] font-normal lg:mx-2 text-lg;
+  @apply flex items-center ml-4 py-4 px-4 text-lg text-white lg:text-[#7b6772] font-semibold lg:mx-2 uppercase;
+}
+.header_nav #menu-header li:last-child a {
+  @apply bg-[#7b6772] py-3 px-5 mb-2 text-xl lg:bg-transparent lg:text-lg lg:p-0 lg:mb-0;
 }
 .header_nav #menu-header .sub-menu {
   @apply sticky z-50 lg:absolute lg:bg-white lg:left-[50%];
 }
-.header_nav #menu-header li:nth-child(4) a:after {
+.header_nav #menu-header .sub-menu li:last-child a {
+  @apply bg-transparent;
+}
+.header_nav #menu-header li:nth-child(3) a:after {
   background: url("../img/arrow-down.svg") center center no-repeat;
   width: 24px;
   height: 24px;
@@ -73,6 +75,15 @@ header {
 
 .header_cart {
   @apply relative;
+}
+#cart_link {
+  @apply flex flex-col items-center gap-1 uppercase text-[#7b6772] text-sm lg:flex-row justify-center flex-shrink;
+}
+#cart_link img {
+  @apply w-10 h-10 flex-shrink;
+}
+#cart_link p {
+  @apply mb-0 flex-shrink;
 }
 .header_cart-count {
   @apply text-[12px] text-white text-center font-semibold w-4 h-4 bg-[#d9534f] rounded-[50%] block absolute -top-2 -right-3;

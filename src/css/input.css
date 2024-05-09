@@ -18,7 +18,6 @@
 html {
   margin: 0 auto !important;
   padding: 0 !important;
-  max-width: 1560px;
 }
 body {
   padding-top: 0 !important;
@@ -28,4 +27,7 @@ a {
 }
 h2 {
   margin: 0;
+}
+.woocommerce-billing-fields__field-wrapper label {
+  @apply font-poppins text-gray-600;
 }
