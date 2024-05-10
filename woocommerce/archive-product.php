@@ -57,16 +57,16 @@ $banners = get_field('shop_slide',woocommerce_get_page_id('shop'));
       <button id="az-btn">A - Z</button>
     </li>
     <li>
-      <a id="price-btn" href="#">
-        <p>Price</p>
+      <div class='filter__price-wrapper'>
+        <p id="price-btn">Price</p>
           <form class='filter__price hidden'>
           <div>
-            <label for="max_price">Until <span>$</span></label>
-            <input type="number" name='max_price' id="max_price" value="<?= $_GET['max_price'] ?? ""; ?>">
+            <label for="max_price">up to $</label>
+            <input type="number" name='max_price' placeholder="50.00" id="max_price" value="<?= $_GET['max_price'] ?? ""; ?>">
           </div>    
             <button type="submit">Search Price</button>
           </form>
-      </a>
+      </div>
     </li>
   </ul>
 </div>

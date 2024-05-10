@@ -5,13 +5,6 @@ import "./modules/singleProductCaroussel.js";
 import "./modules/shopBannerSlide.js";
 import "./modules/filters-query.js";
 
-const priceBtn = document.getElementById("price-btn");
-if (priceBtn) {
-  priceBtn.addEventListener("click", (event) => {
-    event.preventDefault();
-  });
-}
-
 const menuMobile = new MenuMobile(".menu_mobile-btn", ".header_nav");
 const filterMobile = new MenuMobile(".filter_btn", ".filter_list");
 const catMobile = new MenuMobile(".categories_btn", ".categories_nav");

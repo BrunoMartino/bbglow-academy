@@ -1,8 +1,8 @@
 #shop__banner {
-  @apply w-full h-[40vh] mb-16 flex lg:h-[50vh];
+  @apply w-full h-[40vh] mb-16 flex lg:h-[50vh] xl:container xl:mx-auto;
 }
 #banner__slide {
-  @apply w-full h-full border-b-4 border-b-black;
+  @apply w-full h-full mb-8;
 }
 .banner__wrapper {
   @apply container mx-auto h-[420px] w-full relative;
@@ -83,13 +83,13 @@
 #price-btn {
   @apply px-4 py-2 text-sm uppercase font-bold text-black lg:text-white focus:outline-none focus:border-0;
 }
-#price-btn {
+.filter__price-wrapper {
   @apply relative;
 }
-#price-btn p {
+#price-btn {
   @apply flex items-center mb-0;
 }
-#price-btn p::after {
+#price-btn::after {
   background: url("../img/arrow-down.svg") center center no-repeat;
   width: 24px;
   height: 24px;
@@ -98,7 +98,7 @@
   color: white;
 }
 @media (min-width: 1024px) {
-  #price-btn p::after {
+  #price-btn::after {
     background: url("../img/arrow-down-white.svg") center center no-repeat;
     width: 24px;
     height: 24px;
@@ -111,13 +111,13 @@
   @apply absolute flex flex-col top-11 left-0 lg:right-0 bg-[#f6f6f6] text-black z-10 w-48 p-4 lg:shadow-xl lg:rounded-lg;
 }
 .filter__price div {
-  @apply flex mb-2;
+  @apply flex items-center mb-2;
 }
 .filter__price div label {
-  @apply flex mr-6 gap-2 font-poppins;
+  @apply mb-0  font-poppins text-sm;
 }
 .filter__price div input {
-  @apply border-2 border-black w-20 px-2;
+  @apply border-2 border-gray-500 w-20 px-2 ml-3;
 }
 .filter__price button {
   @apply text-white font-poppins bg-[#7b6772] px-3 py-1 rounded-full text-xs uppercase;
